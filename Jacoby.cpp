@@ -77,7 +77,6 @@ void yakob::create()
 void yakob::show()
 {
 	yakob::ifend();
-	ofstream out("output.txt");
 	cout << endl;
 	for (int i(0); i < n; i++)
 	{
@@ -117,15 +116,18 @@ void yakob::method()
 	cout << endl;
 
 	yakob::alpha_meth();
-
+	ofstream out("output.txt");
 	cout << "Begin aproxiation: X = ( ";
+	out << "Begin aproxiation: X = ( ";
 	for (int i(0); i < n; i++)
 	{
 		x[i] = b[i];
 		cout << x[i];
-		if (i != n - 1) cout << ", ";
-		else cout << " ); ";
+		out << x[i];
+		if (i != n - 1) { cout << ", "; out << ", "; }
+		else { cout << " ); "; out << " );"; }
 	}
+	out << endl;
 	cout << endl;
 
 	int i = 1;
