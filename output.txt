@@ -1,0 +1,2 @@
+
+Close aproxiation: X = ( -0.25, -1.66533e-16, 0.5 );
