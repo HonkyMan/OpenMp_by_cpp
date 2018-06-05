@@ -1,0 +1,20 @@
+# Lines starting with '#' are considered comments.
+# Ignore any file named foo.txt.
+ChMeth.sln
+*.csproj*
+*.vcxproj*
+ChMeth.AssemblyInfo.*
+*.pdb
+Interop.Microsoft.*
+# Ignore (generated) html files,
+*.html
+# except foo.html which is maintained by hand.
+!foo.html
+# Ignore objects and archives.
+*.[oa]
+.vs
+.json
+obj
+README.md
+Debug
+stdafx.*
